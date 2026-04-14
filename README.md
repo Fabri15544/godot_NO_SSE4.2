@@ -8,6 +8,8 @@ Descargar Template: https://godotengine.org/download/archive/4.5-stable/
 
 Download the template and install it in Godot. Once installed, go to the location and rename the folder to "4.7.dev"
 
+Compile games to x86_32 architecture, for processors without SSE4.2.
+
 <p align="center">
   <a href="https://godotengine.org">
     <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
