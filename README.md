@@ -4,7 +4,7 @@ Grant permissions: `chmod +x Compiler.sh`
 
 To compile Godot, run: `./Compiler.sh`
 
-Descargar Template: https://godotengine.org/download/archive/4.5-stable/
+Download Template: https://godotengine.org/download/archive/4.5-stable/
 
 Download the template and install it in Godot. Once installed, go to the location and rename the folder to "4.7.dev"
 
