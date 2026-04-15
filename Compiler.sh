@@ -13,11 +13,12 @@ command -v scons >/dev/null || { echo "Falta scons"; exit 1; }
 
 echo "Usando compilador: $(clang++ --version | head -1)"
 
-# Configuración
+# Detectar núcleos
 
-export SCONS_FLAGS="platform=linuxbsd arch=x86_64 use_llvm=yes use_lto=yes production=yes CC=clang CXX=clang++ -j$(nproc)"
+CORES=$(nproc)
+echo "Núcleos detectados: $CORES"
 
 echo -e "\nCompilando editor..."
-scons target=editor $SCONS_FLAGS
+scons platform=linuxbsd target=editor arch=x86_64 use_llvm=yes -j$CORES
 
 echo -e "\n✔ Compilación completa"
